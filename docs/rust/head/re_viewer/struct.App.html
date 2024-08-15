@@ -73,14 +73,14 @@
 )</h4></section><section id="method.memory_panel_ui" class="method"><a class="src rightside" href="../src/re_viewer/app.rs.html#864-887">source</a><h4 class="code-header">fn <a href="#method.memory_panel_ui" class="fn">memory_panel_ui</a>(
     &amp;mut self,
     ui: &amp;mut Ui,
-    gpu_resource_stats: &amp;<a class="struct" href="../re_renderer/wgpu_resources/struct.WgpuResourcePoolStatistics.html" title="struct re_renderer::wgpu_resources::WgpuResourcePoolStatistics">WgpuResourcePoolStatistics</a>,
+    gpu_resource_stats: &amp;WgpuResourcePoolStatistics,
     store_stats: <a class="enum" href="https://doc.rust-lang.org/1.76.0/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;&amp;<a class="struct" href="../re_viewer_context/store_hub/struct.StoreHubStats.html" title="struct re_viewer_context::store_hub::StoreHubStats">StoreHubStats</a>&gt;
 )</h4></section><section id="method.egui_debug_panel_ui" class="method"><a class="src rightside" href="../src/re_viewer/app.rs.html#889-911">source</a><h4 class="code-header">fn <a href="#method.egui_debug_panel_ui" class="fn">egui_debug_panel_ui</a>(&amp;mut self, ui: &amp;mut Ui)</h4></section><details class="toggle method-toggle" open><summary><section id="method.ui" class="method"><a class="src rightside" href="../src/re_viewer/app.rs.html#917-996">source</a><h4 class="code-header">fn <a href="#method.ui" class="fn">ui</a>(
     &amp;mut self,
     egui_ctx: &amp;Context,
     frame: &amp;Frame,
     app_blueprint: &amp;<a class="struct" href="app_blueprint/struct.AppBlueprint.html" title="struct re_viewer::app_blueprint::AppBlueprint">AppBlueprint</a>&lt;'_&gt;,
-    gpu_resource_stats: &amp;<a class="struct" href="../re_renderer/wgpu_resources/struct.WgpuResourcePoolStatistics.html" title="struct re_renderer::wgpu_resources::WgpuResourcePoolStatistics">WgpuResourcePoolStatistics</a>,
+    gpu_resource_stats: &amp;WgpuResourcePoolStatistics,
     store_context: <a class="enum" href="https://doc.rust-lang.org/1.76.0/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;&amp;<a class="struct" href="../re_viewer_context/store_context/struct.StoreContext.html" title="struct re_viewer_context::store_context::StoreContext">StoreContext</a>&lt;'_&gt;&gt;,
     store_stats: <a class="enum" href="https://doc.rust-lang.org/1.76.0/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;&amp;<a class="struct" href="../re_viewer_context/store_hub/struct.StoreHubStats.html" title="struct re_viewer_context::store_hub::StoreHubStats">StoreHubStats</a>&gt;
 )</h4></section></summary><div class="docblock"><p>Top-level ui function.</p>
